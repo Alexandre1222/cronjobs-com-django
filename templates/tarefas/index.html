@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Projeto Crontabs</title>
+    </head>
+    <body>
+        <div class="d-flex">
+            {% include "partials/_navbar.html" %}
+            
+            <main class="mx-auto">
+                <div class="container-fluid px-4">
+                    <h3 class="mt-4">Tarefas Agendadas</h3> 
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <div class="card">
+                                    <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">
+                                            Fazer job Schedule
+                                        </h5>
+                                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                                    </div>
+                                      <h6 class="card-subtitle mb-2 text-body-secondary text-primary">Processos</h6>
+                                      <div class="collapse" id="collapseExample">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </main>
+            
+            {% include "partials/_scripts.html" %}
+        </div>
+    </body>
+</html>
